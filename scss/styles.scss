@@ -1,0 +1,88 @@
+@import './reset-style/reset';
+@import './app-styles/app';
+@import './shared-styles/common-styles';
+
+@import './shared-styles/variables';
+
+
+
+.container{
+  width: 90%;
+  max-width: 1300px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+// app-goal class
+
+
+.app-goal{
+  align-self: center;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.highlight-text{
+  color: rgb(255, 255, 255);
+  transform: scale(0.5);
+  animation: deepen-color 1s ease-in forwards;
+}
+
+@keyframes deepen-color{
+  from{
+    transform: scale(0.5);
+    color: rgb(255, 255, 255);
+  }
+  to{
+    transform: scale(1);
+    color:rgb(255, 255, 0);
+  }
+}
+
+@media(min-width: 600px){
+  .app-goal{
+    align-self: center;
+    font-size: 2.5rem;
+    text-align: center;
+  } 
+}
+
+@media(min-width: 1000px){
+  .app-goal{
+    align-self: center;
+    font-size: 3rem;
+    text-align: center;
+  } 
+}
+
+@media(min-width: 1500px){
+  .app-goal{
+    align-self: center;
+    font-size: 4rem;
+    text-align: center;
+  } 
+}
+
+
+.screen-container{
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  animation: shrink 2s 5s forwards ease-in;
+  overflow: hidden;
+}
+
+@keyframes shrink{
+  from{
+    max-height: 100vh;
+    display: flex;
+  }
+  to{
+    max-height: 0vh;
+    display: none;
+  }
+}
+
