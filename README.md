@@ -1,5 +1,4 @@
 ## Get Direction
----
 
 ### Goal of this website
 
