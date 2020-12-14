@@ -91,6 +91,8 @@
 
 .steps-heading{
   font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 @media(min-width: 600px){
@@ -114,8 +116,14 @@
 
 .steps-content{
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 1fr;
   justify-content: space-between;
+}
+
+@media (min-width: 800px) {
+  .steps-content{
+    grid-template-columns: 40% 60%;
+  }
 }
 
 .steps-image-content img{
