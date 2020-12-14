@@ -1,5 +1,4 @@
 ## Get Direction
----
 
 There are many instances in life where we want to find direction. Reason can vary a lot.
 
